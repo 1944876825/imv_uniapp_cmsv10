@@ -1,0 +1,129 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/center/center",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": true,
+				"app-plus": { 
+				    "pullToRefresh": { 
+						"style": "circle",
+						"color": "#512fbb"
+				    }
+				}
+            }
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": true,
+				"app-plus": {
+				    "pullToRefresh": { 
+						"style": "circle",
+						"color": "#512fbb"
+				    }
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/play/play",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "正在加载",
+                "enablePullDownRefresh": true,
+				"app-plus": {
+				    "pullToRefresh": { 
+						"style": "circle",
+						"color": "#512fbb"
+				    }
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "历史播放",
+                "enablePullDownRefresh": true,
+				"app-plus": {
+				    "pullToRefresh": { 
+						"style": "circle",
+						"color": "#512fbb"
+				    }
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/liuyan/liuyan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "留言",
+                "enablePullDownRefresh": true,
+				"app-plus": {
+				    "pullToRefresh": { 
+						"style": "circle",
+						"color": "#512fbb"
+				    }
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/set",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/class/class",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"onReachBottomDistance":300
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "爱MV",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff"
+	},
+	"tabBar":{
+		"selectedColor":"#512fbb",
+		"fontSize":"12px",
+		"borderStyle":"white",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/tar/home.png",
+				"selectedIconPath":"static/tar/home1.png"
+			},
+			{
+				"pagePath":"pages/center/center",
+				"text":"我的",
+				"iconPath":"static/tar/my.png",
+				"selectedIconPath":"static/tar/my1.png"
+			}
+		]
+	}
+}
